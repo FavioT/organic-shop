@@ -42,11 +42,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
    }
 
    async ngOnInit() {
-    (await this.shoppingCartService.getCart()).subscribe((cart: any) => this.cart = cart);
+    this.suscription = (await this.shoppingCartService.getCart()).subscribe((cart: any) => this.cart = cart);
    }
 
    ngOnDestroy() {
-    // @ToDo: el unsubscribe tira error porque suscription es undefined
-    // this.suscription.unsubscribe();
+    this.suscription.unsubscribe();
    }
 }
