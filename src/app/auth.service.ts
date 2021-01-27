@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import firebase from 'firebase/app';
 import { ActivatedRoute } from '@angular/router';
-import { AppUser } from './models/app-user';
+import { AppUser } from 'shared/models/app-user';
 import { switchMap } from 'rxjs/operators';
 
 @Injectable({

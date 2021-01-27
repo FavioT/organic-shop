@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { OrderService } from './order.service';
 import { ShoppingCartService } from './shopping-cart.service';
 import { ProductService } from './product.service';
@@ -50,13 +51,12 @@ import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-c
     AdminOrdersComponent,
     ProductFormComponent,
     ProductFilterComponent,
-    ProductCardComponent,
-    ProductQuantityComponent,
     CheckOutComponent,
     ShoppingCartSummaryComponent,
     MyOrdersComponent
   ],
   imports: [
+    SharedModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
@@ -96,14 +96,7 @@ import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-c
     CustomFormsModule
   ],
   providers: [
-    AuthService,
-    AuthGuardService,
-    UserService,
-    AdminAuthGuardService,
-    CategoryService,
-    ProductService,
-    ShoppingCartService,
-    OrderService
+    AdminAuthGuardService
   ],
   bootstrap: [AppComponent]
 })

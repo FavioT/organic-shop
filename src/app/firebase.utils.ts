@@ -1,4 +1,4 @@
-import { Product } from './models/product';
+import { Product } from 'shared/models/product';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { SnapshotAction } from '@angular/fire/database';

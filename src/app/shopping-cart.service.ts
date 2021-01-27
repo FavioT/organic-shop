@@ -1,10 +1,10 @@
 import { take, map } from 'rxjs/operators';
-import { Product } from './models/product';
+import { Product } from 'shared/models/product';
 import { AngularFireDatabase, AngularFireObject } from '@angular/fire/database';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { $payload } from './firebase.utils';
-import { ShoppingCart } from './models/shopping-cart';
+import { ShoppingCart } from 'shared/models/shopping-cart';
 
 @Injectable({
   providedIn: 'root'
