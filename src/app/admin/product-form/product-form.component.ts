@@ -1,11 +1,11 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProductService } from './../../product.service';
-import { CategoryService } from './../../category.service';
+import { ProductService } from 'shared/services/product.service';
+import { CategoryService } from 'shared/services/category.service';
 import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-product-form',
+  selector: 'product-form',
   templateUrl: './product-form.component.html',
   styleUrls: ['./product-form.component.css']
 })

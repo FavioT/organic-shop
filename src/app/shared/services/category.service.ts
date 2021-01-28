@@ -2,7 +2,7 @@ import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 import { map } from 'rxjs/operators';
-import { $key } from './firebase.utils';
+import { $key } from '../../firebase.utils';
 
 @Injectable({
   providedIn: 'root'
