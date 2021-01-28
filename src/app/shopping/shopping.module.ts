@@ -25,8 +25,6 @@ import { AuthGuardService } from 'shared/services/auth-guard.service';
   ],
   imports: [
     SharedModule,
-    CommonModule,
-    FormsModule,
     RouterModule.forChild([
       { path: 'products', component: ProductsComponent },
       { path: 'shopping-cart', component: ShoppingCartComponent },

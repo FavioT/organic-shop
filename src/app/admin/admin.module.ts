@@ -17,8 +17,6 @@ import { AuthGuardService } from 'shared/services/auth-guard.service';
   ],
   imports: [
     SharedModule,
-    FormsModule,
-    CommonModule,
     RouterModule.forChild([
       {
         path: 'admin/products/new',
